@@ -300,7 +300,7 @@ container{
 =========================== */
 section {
   /* wysokość dopasowana do widoku urządzenia */
-  height: 100dvh; /* dynamic viewport height */
+  height: 80dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
 
   /* padding z uwzględnieniem bezpiecznych obszarów */
@@ -1023,4 +1023,5 @@ textarea {
   overflow: hidden;
 
 }
+
 

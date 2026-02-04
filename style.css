@@ -86,7 +86,7 @@ body {
   position: absolute;
   left: 40px;
   bottom: 32px;
-
+touch-action: manipulation;
   display: flex;
   align-items: center;
   gap: 14px;

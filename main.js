@@ -12,34 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
     img.addEventListener("click", () => {
       lightbox.classList.add("active");
       lightboxImg.src = img.src;
+      document.body.style.overflow = "hidden";
     });
   });
 
   lightbox.addEventListener("click", () => {
     lightbox.classList.remove("active");
     lightboxImg.src = "";
+    document.body.style.overflow = "";
   });
 
-  /* =========================
-     CENNIK – JEDNA KARTA NARAZ
-  ========================== */
-/*
- const cards = document.querySelectorAll(".gallery-grid12");
+  lightboxImg.addEventListener("click", e => e.stopPropagation());
 
-cards.forEach(card => {
-  card.addEventListener("click", () => {
-    // jeśli kliknięta karta jest już aktywna → zamknij ją
-    if (card.classList.contains("active")) {
-      card.classList.remove("active");
-    } else {
-      // zamknij wszystkie inne karty
-      cards.forEach(c => c.classList.remove("active"));
-      // otwórz klikniętą kartę
-      card.classList.add("active");
-    }
-  });
-});
-*/
   /* =========================
      REVEAL ON SCROLL
   ========================== */
@@ -55,64 +39,32 @@ cards.forEach(card => {
   }, { threshold: 0.05 });
 
   reveals.forEach(el => observer.observe(el));
-// ✅ druga sekcja od razu pokazana
-if (reveals[1]) {          // drugi element w NodeList
-  reveals[1].classList.add("active");
-}
-});
-/*document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault(); // zapobiega domyślnej wysyłce
 
-  // Sprawdź, czy reCAPTCHA jest zaznaczone
-  const recaptchaResponse = grecaptcha.getResponse();
-  if (!recaptchaResponse) {
-    alert('Proszę zaznaczyć "Nie jestem robotem"');
-    return;
-  }
+  // ✅ druga sekcja od razu pokazana
+  if (reveals[1]) reveals[1].classList.add("active");
 
-  // Wysyłka przez EmailJS
-  emailjs.send('TWOJ_SERVICE_ID', 'TWOJ_TEMPLATE_ID', {
-    from_name: this.name.value,
-    from_email: this.email.value,
-    message: this.message.value,
-    'g-recaptcha-response': recaptchaResponse
-  }, 'TWOJ_USER_ID')
-  .then(() => {
-    alert('Wiadomość wysłana!');
-    this.reset();
-    grecaptcha.reset(); // resetuje captcha
-  }, (err) => {
-    alert('Błąd wysyłki: ' + JSON.stringify(err));
-  });
-});*/
-document.addEventListener("DOMContentLoaded", () => {
+  /* =========================
+     SWIPER – GALERIA
+  ========================== */
+
   const gallerySwiper = new Swiper(".gallery-wrapper", {
     slidesPerView: 1.2,
     spaceBetween: 20,
-	centeredSlides: true,
+    centeredSlides: true,
     grabCursor: true,
     loop: false,
-    breakpoints: {
-      600: { slidesPerView: 2.2 },
-      1024: { slidesPerView: 4 },
-    },
     pagination: { el: ".swiper-pagination", clickable: true },
-	 breakpoints: {
-    0: {
-		slidesPerView: 2.2,
-      centeredSlides: true,
+    breakpoints: {
+      0:    { slidesPerView: 2.2, centeredSlides: true },
+      600:  { slidesPerView: 2.2, centeredSlides: true },
+      768:  { slidesPerView: 4.2, centeredSlides: false },
+      1024: { slidesPerView: 4,   centeredSlides: false }
     },
-    768: {
-		slidesPerView: 4.2,
-      centeredSlides: false,
-    }
-  }
+    observer: true,       // obserwuje zmiany DOM
+    observeParents: true  // obserwuje zmiany rodziców
   });
 
-  // LIGHTBOX
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-
+  // LIGHTBOX dla slidera
   document.querySelectorAll(".swiper-slide img").forEach(img => {
     img.addEventListener("click", () => {
       lightboxImg.src = img.src;
@@ -121,11 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-    document.body.style.overflow = "";
-    lightboxImg.src = "";
-  });
-
-  lightboxImg.addEventListener("click", e => e.stopPropagation());
 });

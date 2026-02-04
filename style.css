@@ -186,12 +186,6 @@ touch-action: manipulation;
     font-size: 14.5px;
   }
 }
-@media (max-width: 360px) {
-  .hero-social-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 /* ===========================
    TYPOGRAFIA
 =========================== */
@@ -1027,4 +1021,5 @@ textarea {
 
   position: relative;
   overflow: hidden;
+
 }

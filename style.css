@@ -411,13 +411,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .swiper-slide {
   flex-shrink: 0; /* ważne, żeby slajdy nie kurczyły się */
-  width: 400px;   /* szerokość jednego slajdu – zmień według potrzeby */
-  height: 300px;
+  width: 40vw;   /* szerokość jednego slajdu – zmień według potrzeby */
+  height: 50vh;
   border-radius: 16px;
 }
 .swiper-slide img {
   width: 100%;
-  height: 300px; /* możesz zmienić wysokość */
+  height: 50vh; /* możesz zmienić wysokość */
   object-fit: cover;
   border-radius: 16px;
   cursor: pointer;
@@ -958,6 +958,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

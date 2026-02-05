@@ -221,7 +221,14 @@ p {
   line-height: 1.5;
 }
 .floating-logo {
-  position: fixed;      /* zawsze w tym samym miejscu */
+	 opacity: 0;                /* niewidoczne na start */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(-20px);
+}
+.floating-logo.visible {
+  opacity: 1;
+  transform: translateY(0);  /* płynne pojawienie się */
+	  position: fixed;      /* zawsze w tym samym miejscu */
   top: 25px;            /* odległość od górnej krawędzi */
   left: 50%;            /* wyśrodkowanie poziome */
   transform: translateX(-50%); /* dokładne wycentrowanie */
@@ -942,6 +949,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

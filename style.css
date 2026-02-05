@@ -235,7 +235,6 @@ p {
 .floating-logo.visible {
 display: block;
 opacity: 1;
-size:0.6;
 transform: translateY(0) translateX(-50%) scale(0.6);  /* płynne pojawienie się */
 transition: transform 0.3s ease, opacity 0.3s ease; /* płynne pojawienie się i skalowanie */
 }
@@ -949,6 +948,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

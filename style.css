@@ -404,7 +404,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* kontener galerii */
 .gallery-wrapper {
   width: 100%;
-  overflow: visible;
+  overflow: Hidden;
   position: relative;
 
 }
@@ -412,6 +412,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
 }
 .swiper-slide {
+	flex-shrink: 0;       /* nie kurczy się */
+  max-width: 300px;      /* opcjonalnie ograniczenie szerokości */
 	aspect-ratio: 3 / 4;   /* ⬅️ PROPORCJE ZDJĘCIA */
   height: auto;
   flex-shrink: 0; /* ważne, żeby slajdy nie kurczyły się */
@@ -431,7 +433,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 12px; /* odstęp od galerii */
   text-align: center;
   z-index: 10;
-  position: static !important;
+  position: relative;
 
 }
 .swiper-pagination-bullet {
@@ -906,6 +908,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

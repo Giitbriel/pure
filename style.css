@@ -309,10 +309,6 @@ section {
   height: 70vh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
   /* padding z uwzględnieniem bezpiecznych obszarów */
-  padding: calc(env(safe-area-inset-top, 20px) + 20px) 
-           calc(env(safe-area-inset-right, 20px) + 20px) 
-           calc(env(safe-area-inset-bottom, 20px) + 20px) 
-           calc(env(safe-area-inset-left, 20px) + 20px);
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
   display: flex;
@@ -334,12 +330,6 @@ section {
 }
 /* Dodatkowa responsywność dla bardzo małych ekranów */
 @media (max-height: 700px) {
-  section {
-    padding: calc(env(safe-area-inset-top, 10px) + 10px)
-             calc(env(safe-area-inset-right, 10px) + 10px)
-             calc(env(safe-area-inset-bottom, 10px) + 10px)
-             calc(env(safe-area-inset-left, 10px) + 10px);
-  }
 }
 section::before {
   content: '';
@@ -670,11 +660,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* ===========================
    LOKALIZACJA
 =========================== */
-.location-section {
-	
-  padding: 120px 40px;
-  text-align: center;
-}
+
 .location-wrapper {
   max-width: 900px;
   margin: auto;
@@ -787,11 +773,7 @@ textarea {
   }
 }
 /* ================== GALERIA SLIDER ================== */
-.gallery-section {
-  padding: 60px 20px;
-  max-width: 80%;
-  margin: auto;
-}
+
 .gallery-container {
   position: relative;
 }
@@ -864,6 +846,7 @@ padding: calc(env(safe-area-inset-top, 20px) + 120px) 40px 20px 40px; /* góra 1
   position: relative;
   overflow: hidden;
 }
+
 
 
 

@@ -60,7 +60,7 @@ if (floatingLogo && heroHeading) {
      SWIPER – GALERIA
   ========================== */
   const gallerySwiper = new Swiper(".gallery-wrapper", {
-    slidesPerView: 1.2,
+    slidesPerView: 2.2,
     spaceBetween: 20,
     centeredSlides: true,
     grabCursor: true,
@@ -91,6 +91,7 @@ if (floatingLogo && heroHeading) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
 
 
 

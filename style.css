@@ -181,7 +181,6 @@ h1 img {
 }
 @media (max-width: 390px) {
   .hero-social-bar {
-    top: 20px;
     left: 20px;
     bottom: auto;
     gap: 10px;
@@ -948,6 +947,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

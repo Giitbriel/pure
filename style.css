@@ -763,7 +763,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
 }
 .map-wrapper iframe {
-  width: 100%;
+  width: 95%;
   height: auto;
   border: none;
 }
@@ -946,6 +946,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

@@ -74,11 +74,12 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-pointer-events: none;
+pointer-events: auto;
   position: relative;
   overflow: hidden;
 }
 .hero-content {
+	pointer-events: none;
   height: 100%;
   width: 100%;
   display: flex;
@@ -88,13 +89,13 @@ pointer-events: none;
   text-align: center;
 }
 /* SOCIAL BAR – LEWY DOLNY RÓG HERO */
-.hero-content,
 .hero-social-bar,
 .hero-social-bar * {
   pointer-events: auto;
 }
 .hero-social-bar {
   position: absolute;
+	pointer-events: auto;
   left: 40px;
   bottom: 32px;
   display: flex;
@@ -114,6 +115,9 @@ pointer-events: none;
   overflow: hidden;
 }
 .social-icons a {
+  position: relative;
+  z-index: 10;
+  -webkit-touch-callout: none;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -958,6 +962,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

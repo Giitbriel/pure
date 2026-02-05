@@ -377,10 +377,7 @@ section::after {
   height: 70vh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
   /* padding z uwzględnieniem bezpiecznych obszarów */
-  padding: calc(env(safe-area-inset-top, 20px) + 20px) 
-           calc(env(safe-area-inset-right, 20px) + 20px) 
-           calc(env(safe-area-inset-bottom, 20px) + 20px) 
-           calc(env(safe-area-inset-left, 20px) + 20px);
+  padding: calc(env(safe-area-inset-top, 20px) + 120px) 20px 20px 20px; /* góra 120px jak lokalizacja */
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
   display: flex;
@@ -847,10 +844,7 @@ textarea {
   height: 70vh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
   /* padding z uwzględnieniem bezpiecznych obszarów */
-  padding: calc(env(safe-area-inset-top, 20px) + 20px) 
-           calc(env(safe-area-inset-right, 20px) + 20px) 
-           calc(env(safe-area-inset-bottom, 20px) + 20px) 
-           calc(env(safe-area-inset-left, 20px) + 20px);
+padding: calc(env(safe-area-inset-top, 20px) + 120px) 40px 20px 40px; /* góra 120px */
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
   display: flex;
@@ -870,6 +864,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

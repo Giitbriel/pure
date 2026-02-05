@@ -33,6 +33,22 @@ body {
     background-attachment: scroll;      /* fixed nie działa dobrze na mobile */
   }
 }
+/* ---------------- STOPKA ---------------- */
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif; /* czcionka taka jak body */
+  position: relative;
+  z-index: 999;           /* nad wszystkim */
+  margin-bottom:20px;
+}
+
+.footer-text  {
+  margin: 0;
+  letter-spacing:1px;
+  font-weight: 400;
+}
 #hero {
     /* wysokość dopasowana do widoku urządzenia */
   height: 80dvh; /* dynamic viewport height */
@@ -926,6 +942,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

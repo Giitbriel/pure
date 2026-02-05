@@ -330,7 +330,7 @@ section {
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 /* Dodatkowa responsywność dla bardzo małych ekranów */
 @media (max-height: 700px) {
@@ -398,7 +398,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* kontener galerii */
@@ -965,6 +965,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

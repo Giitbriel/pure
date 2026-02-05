@@ -413,14 +413,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom:30px;
 }
 .swiper-slide {
+	aspect-ratio: 3 / 4;   /* ⬅️ PROPORCJE ZDJĘCIA */
+  height: auto;
   flex-shrink: 0; /* ważne, żeby slajdy nie kurczyły się */
   width: 40vw;   /* szerokość jednego slajdu – zmień według potrzeby */
-  height: 50vh;
   border-radius: 16px;
 }
 .swiper-slide img {
   width: 100%;
-  height: 50vh; /* możesz zmienić wysokość */
+  height: 100%; /* możesz zmienić wysokość */
   object-fit: cover;
   border-radius: 16px;
   cursor: pointer;
@@ -960,6 +961,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

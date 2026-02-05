@@ -37,20 +37,20 @@ const floatingLogo = document.querySelector(".floating-logo");
 const heroHeading = document.querySelector("#hero h1");
 
 if (floatingLogo && heroHeading) {
-  const observerLogo = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          // h1 wyszło z ekranu → pokaż logo
-          floatingLogo.classList.add("visible");
-        } else {
-          // h1 wciąż na ekranie → ukryj logo
-          floatingLogo.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0 } // wywołuje, gdy cokolwiek h1 wychodzi z viewportu
-  );
+ const observerLogo = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        floatingLogo.style.display = "block";   // pokazujemy
+        floatingLogo.classList.add("visible"); // animacja
+      } else {
+        floatingLogo.classList.remove("visible"); 
+        floatingLogo.style.display = "none";    // ukrywamy
+      }
+    });
+  },
+  { threshold: 0 }
+);
 
   observerLogo.observe(heroHeading);
 }
@@ -91,4 +91,5 @@ if (floatingLogo && heroHeading) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
 

@@ -41,11 +41,11 @@ if (floatingLogo && heroHeading) {
   (entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
-        floatingLogo.style.display = "block";   // pokazujemy
+          // pokazujemy
         floatingLogo.classList.add("visible"); // animacja
       } else {
         floatingLogo.classList.remove("visible"); 
-        floatingLogo.style.display = "none";    // ukrywamy
+            // ukrywamy
       }
     });
   },
@@ -91,5 +91,6 @@ if (floatingLogo && heroHeading) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
 
 

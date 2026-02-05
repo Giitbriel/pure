@@ -410,7 +410,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .swiper-wrapper {
   display: flex;
-  margin-bottom:10px;
+  margin-bottom:50px;
 }
 .swiper-slide {
 	aspect-ratio: 3 / 4;   /* ⬅️ PROPORCJE ZDJĘCIA */
@@ -963,6 +963,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

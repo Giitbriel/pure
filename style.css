@@ -802,60 +802,22 @@ textarea {
   overflow: hidden;
   position: relative;
 }
-.gallery-grid {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  transition: transform  0.5s ease;
-}
-.gallery-grid img {
-  flex: 0 0 25%;  /* desktop: 4 zdjęcia */
-  border-radius: 16px;
-}
 @media (max-width: 600px) {
-  .gallery-grid img {
-    flex: 0 0 65%; /* mobile: 1-1,2 zdjęcia */
-  }
+  
 }
 /* KROPKI */
-.dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 16px;
-}
-.dots span {
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #cfcfcf;
-  cursor: pointer;
-  transition: transform .3s, background .3s;
-}
-.dots span.active {
-  background: #000;
-  transform: scale(1.2);
-}
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .gallery-grid {
-    grid-auto-columns: 50%;
-  }
+  
 }
 @media (max-width: 600px) {
-  .gallery-grid {
-    grid-auto-columns: 85%;
-    gap: 14px;
-  }
+  
   .nav {
     display: none;
   }
 }
 @media (max-width: 380px) {
-  .gallery-grid {
-    grid-auto-columns: 92%;
-  }
+  
 }
 /* LIGHTBOX */
 .lightbox {
@@ -908,6 +870,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

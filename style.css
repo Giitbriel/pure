@@ -161,6 +161,7 @@ pointer-events: none;
 }
 @media (max-width: 390px) {
   .hero-social-bar {
+	  top: 20px;
     left: 20px;
     bottom: 20px;
     gap: 10px;
@@ -916,5 +917,6 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 

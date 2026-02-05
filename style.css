@@ -367,7 +367,7 @@ section::after {
   height: 70vh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
   /* padding z uwzględnieniem bezpiecznych obszarów */
-  padding: 20px; /* góra 120px jak lokalizacja */
+  padding-top: 20px; /* góra 120px jak lokalizacja */
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
   display: flex;
@@ -828,7 +828,7 @@ textarea {
   height: 70vh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
   /* padding z uwzględnieniem bezpiecznych obszarów */
-padding: 20px;/* góra 120px */
+padding-top: 20px;/* góra 120px */
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
   display: flex;
@@ -848,6 +848,7 @@ padding: 20px;/* góra 120px */
   position: relative;
   overflow: hidden;
 }
+
 
 
 

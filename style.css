@@ -568,6 +568,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
 }
 #oferta img {
+  z-index: 999;
   width: 100%;              /* wypełnia sekcję poziomo z paddingiem */
   max-height: 100%;             /* wypełnia sekcję pionowo */
   object-fit: contain;        /* zachowuje proporcje, nie rozciąga obrazka */
@@ -944,6 +945,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

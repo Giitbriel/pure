@@ -130,6 +130,10 @@ pointer-events: none;
 .social-icons a:active{
 	animation: socialFadeUp 0.8s ease-out 0.4s both;
 }
+h1 img {
+  height: clamp(50px, 10vw, 130px);
+  width: auto;
+}
 /* ANIMACJA WEJŚCIA */
 .hero-social-bar {
   animation: socialFadeUp 0.8s ease-out 0.4s both;
@@ -170,10 +174,7 @@ pointer-events: none;
   .social-handle {
     font-size: 14.5px;
   }
-	h1 img {
-  height: clamp(50px, 10vw, 130px);
-  width: auto;
-}
+	
 }
 
 @media (max-width: 360px) {
@@ -925,6 +926,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

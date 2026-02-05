@@ -221,25 +221,21 @@ p {
   line-height: 1.5;
 }
 .floating-logo {
-	 opacity: 0;                /* niewidoczne na start */
+  opacity: 0;                
+  transform: translateY(-20px) translateX(-50%);
   transition: opacity 0.5s ease, transform 0.5s ease;
-  transform: translateY(-20px);
+  position: fixed;      
+  top: 25px;            
+  left: 50%;            
+  z-index: 9999;        
+  pointer-events: none;
 }
+
 .floating-logo.visible {
   opacity: 1;
-  transform: translateY(0);  /* płynne pojawienie się */
-	  position: fixed;      /* zawsze w tym samym miejscu */
-  top: 25px;            /* odległość od górnej krawędzi */
-  left: 50%;            /* wyśrodkowanie poziome */
-  transform: translateX(-50%); /* dokładne wycentrowanie */
-  z-index: 9999;        /* na wierzchu wszystkich sekcji */
-  pointer-events: none; /* żeby nie przeszkadzało w klikalności strony */
+  transform: translateY(0) translateX(-50%);  /* płynne pojawienie się */
 }
-.floating-logo img {
-  height: 60px;         /* rozmiar logo – dopasuj */
-  width: auto;
-  display: block;
-}
+
 /* ===========================
    BUTTON
 =========================== */
@@ -949,6 +945,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

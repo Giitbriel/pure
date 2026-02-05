@@ -400,7 +400,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* kontener galerii */
 .gallery-wrapper {
   width: 100%;
-	height: 
+	height: 50vh;
   overflow: hidden;
   position: relative;
 
@@ -958,6 +958,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

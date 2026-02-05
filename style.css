@@ -223,7 +223,7 @@ p {
   position: fixed;
   top: 25px;
   left: 50%;
-  transform: translateX(-50%) scale(0.4); /* początkowa skala */
+  transform: translateX(-50%) scale(0.25); /* początkowa skala */
   opacity: 0; /* niewidoczne */
   z-index: 9999;
   pointer-events: none;
@@ -232,7 +232,7 @@ p {
 
 .floating-logo.visible {
   opacity: 1;
-  transform: translateX(-50%) scale(0.4); /* skala docelowa */
+  transform: translateX(-50%) scale(0.25); /* skala docelowa */
 }
 
 /* ===========================
@@ -944,6 +944,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

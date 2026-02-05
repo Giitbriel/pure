@@ -497,7 +497,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   align-content: center;
   }
   .gallery-grid img {
-    height: 250px;
   }
 }
 @media (max-width: 480px) {
@@ -961,6 +960,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

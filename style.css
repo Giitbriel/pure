@@ -442,12 +442,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0 15px;
 	  justify-content:center;
   align-content: center;
+	  overflow:Hidden;
   }
   
 }
 @media (max-width: 480px) {
   .gallery-wrapper {
     width: 96vw;
+	  Overflow:Hidden;
   }
   
 	.swiper-pagination {
@@ -846,6 +848,7 @@ padding: 20px;/* góra 120px */
   position: relative;
   overflow: hidden;
 }
+
 
 
 

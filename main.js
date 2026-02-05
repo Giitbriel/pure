@@ -30,6 +30,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.05 });
   reveals.forEach(el => observer.observe(el));
+  // ===========================
+// FLOATING LOGO – pojawia się po scrollu
+// ===========================
+const floatingLogo = document.querySelector(".floating-logo");
+const heroHeading = document.querySelector("#hero h1");
+
+if (floatingLogo && heroHeading) {
+  const observerLogo = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          // h1 wyszło z ekranu → pokaż logo
+          floatingLogo.classList.add("visible");
+        } else {
+          // h1 wciąż na ekranie → ukryj logo
+          floatingLogo.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0 } // wywołuje, gdy cokolwiek h1 wychodzi z viewportu
+  );
+
+  observerLogo.observe(heroHeading);
+}
   // ✅ druga sekcja od razu pokazana
   if (reveals[1]) reveals[1].classList.add("active");
   /* =========================
@@ -67,3 +91,4 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+

@@ -72,5 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = "hidden";
     });
   });
-
+// Ustawienie automatycznego roku w stopce
+document.addEventListener("DOMContentLoaded", function() {
+  const yearSpan = document.getElementById("footer-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
+});
+

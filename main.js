@@ -69,7 +69,7 @@ if (floatingLogo && heroHeading) {
     breakpoints: {
       0:    { slidesPerView: 2.2, centeredSlides: true },
       600:  { slidesPerView: 2.2, centeredSlides: true },
-      768:  { slidesPerView: 4.2, centeredSlides: false },
+      768:  { slidesPerView: 3.2, centeredSlides: false },
       1024: { slidesPerView: 4.2,   centeredSlides: false }
     },
     observer: true,
@@ -91,6 +91,7 @@ if (floatingLogo && heroHeading) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
 
 
 

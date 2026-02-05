@@ -86,7 +86,6 @@ body {
   position: absolute;
   left: 40px;
   bottom: 32px;
-touch-action: manipulation;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -114,6 +113,10 @@ touch-action: manipulation;
 
   background: rgba(255,255,255,0.85);
   border: 1px solid rgba(0,0,0,0.15);
+  pointer-events: auto;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 
   display: flex;
   align-items: center;
@@ -1023,6 +1026,7 @@ textarea {
   overflow: hidden;
 
 }
+
 
 
 

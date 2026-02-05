@@ -220,22 +220,19 @@ p {
   line-height: 1.5;
 }
 .floating-logo {
-	display: none;   
-  opacity: 0;                
-  transform: translateY(-20px) translateX(-50%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  position: fixed;      
-  top: 25px;            
-  left: 50%;            
-  z-index: 9999;        
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.6); /* początkowa skala */
+  opacity: 0; /* niewidoczne */
+  z-index: 9999;
   pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .floating-logo.visible {
-display: block;
-opacity: 1;
-transform: translateY(0) translateX(-50%) scale(0.6);  /* płynne pojawienie się */
-transition: transform 0.3s ease, opacity 0.3s ease; /* płynne pojawienie się i skalowanie */
+  opacity: 1;
+  transform: translateX(-50%) scale(1); /* skala docelowa */
 }
 
 /* ===========================
@@ -947,6 +944,7 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
 
 
 

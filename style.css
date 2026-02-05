@@ -1,6 +1,4 @@
-/* ====================================
-   PALETA KOLORÓW
-==================================== */
+/* PALETA KOLORÓW */
 :root {
   --color-bg-1: #F4F2EE;
   --color-bg-2: #E7EDE6;
@@ -8,19 +6,13 @@
   --color-text: #F4F2EE;
   --color-muted: #AAA;
 }
-
-/* ===========================
-   RESET
-=========================== */
+/*  RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* ===========================
-   BODY
-=========================== */
+/* BODY */
 body {
   font-family: 'Montserrat', sans-serif;
   background: url('tlo.png') no-repeat center top scroll;
@@ -39,28 +31,22 @@ body {
     /* wysokość dopasowana do widoku urządzenia */
   height: 80dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
@@ -73,13 +59,15 @@ pointer-events: none;
 .hero-content {
   height: 100%;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
+}
+h1 img {
+  height: clamp(36px, 8vw, 72px);
+  width: auto;
 }
 /* SOCIAL BAR – LEWY DOLNY RÓG HERO */
 .hero-content,
@@ -94,14 +82,11 @@ pointer-events: none;
   display: flex;
   align-items: center;
   gap: 14px;
-	
   padding-bottom: 8px;
   border-bottom: 1.5px solid rgba(0,0,0,0.35);
-
   flex-wrap: wrap;
   max-width: 90%;
 }
-
 /* IKONY – JASNA WERSJA */
 .social-icons {
 	padding:2px;
@@ -110,36 +95,26 @@ pointer-events: none;
    position: relative;
   overflow: hidden;
 }
-
 .social-icons a {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-
   background: rgba(255,255,255,0.85);
   border: 1px solid rgba(0,0,0,0.15);
   pointer-events: auto;
   touch-action: manipulation;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #111;
   font-size: 14px;
   text-decoration: none;
-
    transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
 }
-
-.social-icons a:hover {
- 
-}
-
 /* TEKST */
 .social-handle {
   font-size: 17px;
@@ -154,7 +129,6 @@ pointer-events: none;
 .hero-social-bar {
   animation: socialFadeUp 0.8s ease-out 0.4s both;
 }
-
 @keyframes socialFadeUp {
   from {
     opacity: 0;
@@ -165,20 +139,17 @@ pointer-events: none;
     transform: translateY(0);
   }
 }
-
 /* HOVER IKON – DESKTOP */
 @media (hover: hover) {
   .social-icons a:hover {
     transform: translateY(0px) scale(1.03);
   }
 }
-
 @media (max-width: 480px) {
   .hero-social-bar {
     left: 20px;
     bottom: 20px;
   }
-
   .social-handle {
     font-size: 15px;
   }
@@ -193,19 +164,15 @@ pointer-events: none;
     font-size: 14.5px;
   }
 }
-/* ===========================
-   TYPOGRAFIA
-=========================== */
+/*   TYPOGRAFIA */
 h1, h2 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 20px;
   color: rgba(236, 225, 200,1);
   text-align: center;
 }
-
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
-
 p {
   color: rgba(128, 128, 128,1);
   font-size: .85rem;
@@ -221,19 +188,14 @@ p {
   z-index: 9999;        /* na wierzchu wszystkich sekcji */
   pointer-events: none; /* żeby nie przeszkadzało w klikalności strony */
 }
-
 .floating-logo img {
   height: 60px;         /* rozmiar logo – dopasuj */
   width: auto;
   display: block;
 }
-
-/* ===========================
-   BUTTON
-=========================== */
+/*   BUTTON */
 container{
 	align-items: center;
-	
 }
 .btn {
   display: inline-block;
@@ -244,25 +206,19 @@ container{
   text-decoration: none;
   font-weight: 600;
   transition: .3s;
- 
   text-align:center;
    align-items: center; 
 }
-
 .btn:hover {
   background: rgba(236, 225, 200,1);
   color: #fff;
 }
-
-/* ===========================
-   REVEAL ANIMATION
-=========================== */
+/*  REVEAL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: .8s ease;
 }
-
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
@@ -271,76 +227,59 @@ container{
 	 /* wysokość dopasowana do widoku urządzenia */
   height: 100dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-
   position: relative;
   overflow: hidden;
 }
-/* ===========================
-   SEKCJE
-=========================== */
+/*  SEKCJE */
 section {
   /* wysokość dopasowana do widoku urządzenia */
   height: 80dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-
   position: relative;
   overflow: hidden;
 }
-
 /* Dodatkowa responsywność dla bardzo małych ekranów */
 @media (max-height: 700px) {
   section {
@@ -364,7 +303,6 @@ section::before {
     transparent
   );
 }
-
 section::after {
   content: '';
   position: absolute;
@@ -379,42 +317,32 @@ section::after {
     rgba(255, 255, 255, 0.3)
   );
 }
-
-/* ===========================
-   GALERIA
-=========================== */
+/*  GALERIA*/
 #galeria{
 	 /* wysokość dopasowana do widoku urządzenia */
   height: 100dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-
   position: relative;
   overflow: hidden;
 }
@@ -422,23 +350,19 @@ section::after {
   font-size: 2.7rem;
   margin-bottom: 10px;
 }
-
 .gallery-section p {
   width: 80%;
   max-width: 700px;
   text-align: center;
   margin-bottom: 30px;
   line-height: 1.6;
-}
 
 /* kontener galerii */
 .gallery-wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
-
 }
-
 .swiper-wrapper {
   display: flex;
   margin-bottom:30px;
@@ -463,7 +387,6 @@ section::after {
   text-align: center;
   z-index: 10;
 }
-
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -472,7 +395,6 @@ section::after {
   cursor: pointer;
   transition: transform .3s, background .3s;
 }
-
 .swiper-pagination-bullet-active {
   background: #C9BBAE;
   transform: scale(1.3);
@@ -483,7 +405,6 @@ section::after {
     justify-content:center;
   align-content: center;
 }
-
 .gallery-grid img {
   flex-shrink: 0; /* slajdy się nie kurczą */
   cursor: pointer;
@@ -494,7 +415,6 @@ section::after {
   scroll-snap-align: center;
   display: flex;
 }
-
 .slide img {
   width: 100%;
   height: 300px;
@@ -511,7 +431,6 @@ section::after {
   position: relative;            /* żeby nie nachodziło nic */
   z-index: 10;                   /* zawsze nad obrazkami */
 }
-
 .dots span {
   display: block;
   width: 10px;                   /* większe kropki, łatwiej widoczne */
@@ -521,7 +440,6 @@ section::after {
   cursor: pointer;
   transition: transform .3s, background .3s;
 }
-
 .dots span.active {
   background: #C9BBAE;           /* wyróżniona kropka */
   transform: scale(1.3);
@@ -533,12 +451,10 @@ section::after {
 	  justify-content:center;
   align-content: center;
   }
-
   .gallery-grid img {
     height: 250px;
   }
 }
-
 @media (max-width: 480px) {
   .gallery-wrapper {
     width: 96vw;
@@ -563,12 +479,10 @@ section::after {
   transition: .3s;
   z-index: 999;
 }
-
 .lightbox.active {
   opacity: 1;
   pointer-events: auto;
 }
-
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
@@ -579,52 +493,42 @@ section::after {
    /* wysokość dopasowana do widoku urządzenia */
   height: 100dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-
   position: relative;
   overflow: hidden;
 }
-
 #oferta img {
   width: 100%;              /* wypełnia sekcję poziomo z paddingiem */
   max-height: 100%;             /* wypełnia sekcję pionowo */
   object-fit: contain;        /* zachowuje proporcje, nie rozciąga obrazka */
   border-radius: 16px;
 }
-
 @media (max-width: 768px) {
   .gallery-wrapper {
     display: flex;
     justify-content: center; /* wyśrodkowanie galerii */
     overflow: hidden;        /* ukrywa wystające części */
   }
-
   .gallery-grid {
     display: flex;
     gap: 14px;
@@ -632,18 +536,15 @@ section::after {
     width: max-content;      /* pozwala na przewijanie */
     padding-left: 0;         /* usuń ewentualne wcięcia */
   }
-
   .gallery-grid img {
     flex: 0 0 85%; /* jeden obrazek na ekranie */
   }
 }
-
 @media (max-width: 480px) {
   .gallery-grid img {
     flex: 0 0 90%; /* jeszcze bardziej dopasowane do małego ekranu */
   }
 }
-
 /* RESPONSYWNOŚĆ */
 @media (max-width: 1024px) {
   .full-section-img {
@@ -651,136 +552,17 @@ section::after {
     margin: 0 auto;      /* centrowanie */
   }
 }
-
 @media (max-width: 768px) {
   .full-section-img {
     max-width: 95%;      /* prawie cała szerokość ekranu na tabletach */
   }
 }
-
 @media (max-width: 480px) {
   .full-section-img {
     max-width: 100%;     /* pełna szerokość na mobile */
     border-radius: 12px; /* mniejsze zaokrąglenie na małych ekranach */
   }
 }
-/*.price-section {
-  background: rgba(255,255,255,.05);
-}
-
-.price-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-   align-items: center;
-  justify-content: center;
-}
-
-.price-card {
-  perspective: 1200px;
-  cursor: pointer;
-  background: rgba(255,255,255,.05);
-}
-
-.card-inner {
-  height: 260px;
-  transition: transform .8s ease;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.price-card.active .card-inner {
-  transform: rotateY(180deg) scale(1.15);
-  z-index: 5;
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-}*/
-
-/* Front karty *//*
-.card-front {
-  background: rgba(236, 225, 219,1);
-  backdrop-filter: blur(28px);
-  font-size: 1.4rem;
-}
-*/
-/* Back karty – wszystkie oprócz paznokci *//*
-.card-back {
-  background: rgba(236, 225, 219,1);
-  backdrop-filter: blur(28px);
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  align-items: stretch; /* rozciągamy p na całą szerokość 
-  justify-content: center;
-  gap: 12px;
-  padding: 20px 30px;
-  font-size: 0.85rem;
-  text-align: left;
-}
-
-.card-back p {
-  display: flex;
-  justify-content: space-between; /* usługa po lewej, cena po prawej 
-  align-items: center;
-  margin: 0;
-}
-.card-back p .text {
-  margin-right: 8px; /* opcjonalnie drobny odstęp 
-}
-.card-back p .discount {
-  color: #e74c3c;
-  font-weight: 700;
-  
-}
-
-.card-back .price {
-  font-weight: 600;
-  color: #000; /* kontrastowy kolor ceny 
-}
-.card-back.paznokcie p {
-  margin: 2px 0;        /* mniejsze odstępy między linijkami 
-  line-height: .3;      /* mniejszy line-height niż standard 
-}
-
-.price.discount {
-  color: #e74c3c; /* czerwony 
-  font-weight: 700; /* opcjonalnie pogrubienie 
-} 
-/* Stylizacja paznokci – dwie kolumny 
-.back-grid-paznokcie {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px;
-  width: 100%;
-}
-
-.back-grid-paznokcie .column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  width: 100%;
-}*/
-
-/* Mobile – jedna kolumna dla paznokci */
-@media (max-width: 768px) {
-  .back-grid-paznokcie {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ===========================
    LOKALIZACJA
 =========================== */
@@ -788,7 +570,6 @@ section::after {
   padding: 120px 40px;
   text-align: center;
 }
-
 .location-wrapper {
   max-width: 900px;
   margin: auto;
@@ -797,19 +578,16 @@ section::after {
   gap: 20px;
   align-items: center;
 }
-
 .location-text {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #dcdcdc;
   text-align: center;
 }
-
 .location-text strong {
   color: #e6c7a8;
   font-weight: 500;
 }
-
 .map-wrapper {
   border-radius: 20px;
   overflow: hidden;
@@ -817,13 +595,11 @@ section::after {
   max-width: 600px;
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
 }
-
 .map-wrapper iframe {
   width: 100%;
   height: 360px;
   border: none;
 }
-
 /* ===========================
    FORMULARZ
 =========================== */
@@ -834,18 +610,15 @@ form {
   flex-direction: column;
   gap: 15px;
 }
-
 input, textarea {
   padding: 15px;
   border-radius: 6px;
   border: none;
 }
-
 textarea {
   height: 120px;
   resize: none;
 }
-
 /* ===========================
    RESPONSIVE
 =========================== */
@@ -861,57 +634,25 @@ textarea {
     background-size: cover;
   }
 }
-@media (max-width: 480px) {
-  .card-inner {
-    height: auto;
-	margin: 5px;
-  }
-
-/*  .card-front,
-  .card-back {
-    position: relative;  /* zamiast absolute 
-    inset: auto;
-    transform: none;     /* usuń obrót dla małych ekranów 
-    backface-visibility: visible; /* żeby było widoczne 
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 15px 20px;
-  }
-
-  .price-card.active .card-inner {
-    transform: none; /* flip wyłączony na małych ekranach 
-  }
-}*/
-@media (max-width: 480px) {
-  .card-back p {
-    font-size: 0.8rem;
-    gap: 4px;
-  }
-}
 /* ================== GALERIA SLIDER ================== */
-
 .gallery-section {
   padding: 60px 20px;
   max-width: 80%;
   margin: auto;
 }
-
 .gallery-container {
   position: relative;
 }
-
 .gallery-wrapper {
   overflow: hidden;
   position: relative;
 }
-
 .gallery-grid {
   display: flex;
   gap: 20px;
   width: max-content;
   transition: transform  0.5s ease;
 }
-
 .gallery-grid img {
   flex: 0 0 25%;  /* desktop: 4 zdjęcia */
   border-radius: 16px;
@@ -921,7 +662,6 @@ textarea {
     flex: 0 0 85%; /* mobile: 1-1,2 zdjęcia */
   }
 }
-
 /* KROPKI */
 .dots {
   display: flex;
@@ -929,7 +669,6 @@ textarea {
   gap: 8px;
   margin-top: 16px;
 }
-
 .dots span {
   display: block;
   width: 8px;
@@ -939,19 +678,16 @@ textarea {
   cursor: pointer;
   transition: transform .3s, background .3s;
 }
-
 .dots span.active {
   background: #000;
   transform: scale(1.2);
 }
-
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-auto-columns: 50%;
   }
 }
-
 @media (max-width: 600px) {
   .gallery-grid {
     grid-auto-columns: 85%;
@@ -961,13 +697,11 @@ textarea {
     display: none;
   }
 }
-
 @media (max-width: 380px) {
   .gallery-grid {
     grid-auto-columns: 92%;
   }
 }
-
 /* LIGHTBOX */
 .lightbox {
   position: fixed;
@@ -981,55 +715,45 @@ textarea {
   transition: .3s;
   z-index: 999;
 }
-
 .lightbox.active {
   opacity: 1;
   pointer-events: auto;
 }
-
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
 }
-
 /* LOKALIZACJA */
 #lokalizacja {
 	 /* wysokość dopasowana do widoku urządzenia */
   height: 100dvh; /* dynamic viewport height */
   max-height: 900px; /* na duże ekrany sekcja się nie rozciąga przesadnie */
-
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding: calc(env(safe-area-inset-top, 20px) + 20px) 
            calc(env(safe-area-inset-right, 20px) + 20px) 
            calc(env(safe-area-inset-bottom, 20px) + 20px) 
            calc(env(safe-area-inset-left, 20px) + 20px);
-
   max-width: 80%;
    margin: 20px auto;  /* centrowanie poziome */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
-
   position: relative;
   overflow: hidden;
-
 }
+
 
 
 

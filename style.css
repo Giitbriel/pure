@@ -104,6 +104,9 @@ pointer-events: auto;
   border-bottom: 1.5px solid rgba(0,0,0,0.35);
   flex-wrap: wrap;
   max-width: 90%;
+	  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 /* IKONY – JASNA WERSJA */
 .social-icons {
@@ -851,6 +854,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

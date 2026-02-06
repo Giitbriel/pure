@@ -96,7 +96,7 @@ pointer-events: auto;
 .hero-social-bar {
 	 will-change: transform;
 	transform:translateZ(0);
-  position: fixed;
+  position: absolute;
 	z-index:99999;
 	pointer-events: auto;
   left: 40px;
@@ -451,7 +451,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 	  Overflow:Hidden;
   }
   .swiper-slide {
-    width: 45vw;           /* 2.2 zdjęcia widoczne */
+    width: 65vw;           /* 2.2 zdjęcia widoczne */
     aspect-ratio: 4 / 3;   /* bardziej kwadratowe */
     height: auto;          /* nie wymuszaj wysokiego slajdu */
     max-width: none;
@@ -853,6 +853,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

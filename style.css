@@ -413,8 +413,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   object-fit: cover;
   border-radius: 16px;
   cursor: pointer;
-    justify-content:center;
-  align-content: center;
 }
 .swiper-pagination {
   margin-top: 12px; /* odstęp od galerii */
@@ -440,15 +438,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   .gallery-wrapper {
     width: 90vw;
     padding: 0 15px;
-	  justify-content:center;
-  align-content: center;
+	
 	  overflow:Hidden;
   }
   
 }
 @media (max-width: 480px) {
   .gallery-wrapper {
-    width: 96vw;
+    width: 90vw;
 	  Overflow:Hidden;
   }
   
@@ -848,6 +845,7 @@ padding-top: 20px;/* góra 120px */
   position: relative;
   overflow: hidden;
 }
+
 
 
 

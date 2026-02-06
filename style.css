@@ -408,6 +408,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
 }
 .swiper-slide img {
+	aspect-ratio: 3 / 4;   
   width: 100%;
   height: 100%; /* możesz zmienić wysokość */
   object-fit: cover;
@@ -438,7 +439,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   .gallery-wrapper {
     width: 90vw;
     padding: 0 15px;
-	
+	  aspect-ratio: 3 / 4; 	
 	  overflow:Hidden;
   }
   
@@ -446,6 +447,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 @media (max-width: 480px) {
   .gallery-wrapper {
     width: 90vw;
+	  aspect-ratio: 3 / 4;   
 	  Overflow:Hidden;
   }
   .swiper-slide {
@@ -838,6 +840,7 @@ padding-top: 20px;/* góra 120px */
   position: relative;
   overflow: hidden;
 }
+
 
 
 

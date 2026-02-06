@@ -88,54 +88,79 @@ pointer-events: auto;
   text-align: center;
 }
 /* SOCIAL BAR – LEWY DOLNY RÓG HERO */
-.hero-social-bar,
-.hero-social-bar * {
-  pointer-events: auto;
-}
+
 .hero-social-bar {
-  position: absolute;
-	z-index:99999;
-	pointer-events: auto;
-  left: 20px;
-  bottom: 40px;
-  display: flex;
-  gap: 14px;
-  padding-bottom: 8px;
-  border-bottom: 1.5px solid rgba(0,0,0,0.35);
-  flex-wrap: wrap;
-  max-width: 90%;
-	  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+position: absolute;
+
+left: 40px;
+
+bottom: 32px;
+
+touch-action: manipulation;
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+padding-bottom: 8px;
+
+border-bottom: 1.5px solid rgba(0,0,0,0.35);
+
+flex-wrap: wrap;
+
+max-width: 90%;
+
 }
+
 /* IKONY – JASNA WERSJA */
+
 .social-icons {
-  display: flex;
-  gap: 10px;
-   position: relative;
-  overflow: hidden;
+
+padding:2px;
+
+display: flex;
+
+gap: 10px;
+
+position: relative;
+
+overflow: hidden;
+
 }
+
 .social-icons a {
-  position: relative;
-  z-index: 999999;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(0,0,0,0.15);
-  pointer-events: auto;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #111;
-  font-size: 14px;
-  text-decoration: none;
-   transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+
+width: 34px;
+
+height: 34px;
+
+border-radius: 50%;
+
+background: rgba(255,255,255,0.85);
+
+border: 1px solid rgba(0,0,0,0.15);
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+color: #111;
+
+font-size: 14px;
+
+text-decoration: none;
+
+transition:
+
+transform 0.15s ease,
+
+box-shadow 0.15s ease;
+
 }
 .social-icons a:hover {
 
@@ -854,6 +879,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

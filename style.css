@@ -235,24 +235,14 @@ p {
   pointer-events: auto; /* żeby można było klikać */
   height: clamp(50px, 10vw, 130px); /* ustalona wysokość */
   width: auto;
-
   opacity: 0;
- 
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 /* kiedy aktywne / pokazane */
 .floating-logo.visible {
-  .floating-logo {
-  position: fixed;
-  top: 0; /* przy samej górze */
-  left: 50%;
-  transform: translateX(-50%);
   opacity: 1;
-  z-index: 9999;
-  pointer-events: auto; /* żeby można było klikać */
-  height: clamp(50px, 10vw, 130px); /* ustalona wysokość */
-  width: auto;
-}
+  transform: translateX(-50%) scale(1);
 }
 
 /* ===========================
@@ -866,6 +856,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

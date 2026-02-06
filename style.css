@@ -242,7 +242,7 @@ p {
 /* kiedy aktywne / pokazane */
 .floating-logo.visible {
   opacity: 1;
-  transform: translateX(-50%) scale(1);
+  transform: translateX(-50%) scale(0.15);
 }
 
 /* ===========================
@@ -856,6 +856,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

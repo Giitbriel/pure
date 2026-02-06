@@ -241,7 +241,7 @@ p {
 }
 
 /* kiedy aktywne / pokazane */
-.floating-logo.active {
+.floating-logo.visible {
   .floating-logo {
   position: fixed;
   top: 0; /* przy samej górze */
@@ -866,6 +866,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

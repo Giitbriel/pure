@@ -422,7 +422,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 
 }
-.swiper-pagination-bullet {
+.swiper-pagination{
   width: 8px;
   height: 8px;
   background: #000;
@@ -430,7 +430,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: transform .3s, background .3s;
 }
-.swiper-pagination-bullet-active {
+.swiper-pagination-active {
   background: #C9BBAE;
   transform: scale(1.3);
 }
@@ -449,8 +449,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     width: 90vw;
 	  Overflow:Hidden;
   }
-  
-	.swiper-pagination {
+  .swiper-slide {
+    width: 45%;   /* ⬅️ 2.2 zdjęcia */
+  }
+ .swiper-pagination {
   margin-bottom: 10px;}
 }
 /* ===========================
@@ -652,11 +654,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
 }*/
 /* Mobile – jedna kolumna dla paznokci */
-@media (max-width: 768px) {
-  .back-grid-paznokcie {
-    grid-template-columns: 1fr;
-  }
-}
 /* ===========================
    LOKALIZACJA
 =========================== */
@@ -773,10 +770,6 @@ textarea {
   }
 }
 /* ================== GALERIA SLIDER ================== */
-
-.gallery-container {
-  position: relative;
-}
 .gallery-wrapper {
   overflow: hidden;
   position: relative;
@@ -846,6 +839,7 @@ padding-top: 20px;/* góra 120px */
   position: relative;
   overflow: hidden;
 }
+
 
 
 

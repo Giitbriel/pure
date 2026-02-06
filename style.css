@@ -227,7 +227,7 @@ p {
 }
 .floating-logo {
   position: fixed;
-  top: env(safe-area-inset-top, 20px); /* zawsze przy górze */
+  top: 3vh; /* zawsze przy górze */
   z-index: 9999;
   left: 50%;
   transform: translateX(-50%) scale(0.1);
@@ -853,6 +853,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

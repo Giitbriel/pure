@@ -96,7 +96,7 @@ pointer-events: auto;
   position: absolute;
 	z-index:99999;
 	pointer-events: auto;
-  left: 0px;
+  left: 20px;
   bottom: 40px;
   display: flex;
   gap: 14px;
@@ -107,7 +107,6 @@ pointer-events: auto;
 }
 /* IKONY – JASNA WERSJA */
 .social-icons {
-	padding:2px;
   display: flex;
   gap: 10px;
    position: relative;
@@ -852,6 +851,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

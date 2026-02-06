@@ -94,6 +94,8 @@ pointer-events: auto;
   pointer-events: auto;
 }
 .hero-social-bar {
+	 will-change: transform;
+	transform:translateZ(0);
   position: fixed;
 	z-index:99999;
 	pointer-events: auto;
@@ -839,6 +841,16 @@ padding-top: 20px;/* góra 120px */
     inset 0 0 30px 10px rgba(255, 255, 255, 0.08);
   position: relative;
   overflow: hidden;
+}
+@supports (-webkit-touch-callout: none) {
+  #hero,
+  section,
+  #galeria,
+  #oferta,
+  #lokalizacja {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
 }
 
 

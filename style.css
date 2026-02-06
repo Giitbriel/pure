@@ -101,7 +101,7 @@ touch-action: manipulation;
 
 display: flex;
 
-align-items: flex-end;
+align-items: center;
 
 gap: 14px;
 
@@ -167,6 +167,8 @@ box-shadow 0.15s ease;
 }
 /* TEKST */
 .social-handle {
+	display:flex;
+	align-items:center;
   font-size: 17px;
   letter-spacing: 0.4px;
   color: #111;
@@ -880,6 +882,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

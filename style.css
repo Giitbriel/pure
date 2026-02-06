@@ -93,12 +93,10 @@ pointer-events: auto;
   pointer-events: auto;
 }
 .hero-social-bar {
-	 will-change: transform;
-	-webkit-transform: translate3d(0,0,0);
   position: absolute;
 	z-index:99999;
 	pointer-events: auto;
-  left: 20px;
+  left: 0px;
   bottom: 40px;
   display: flex;
   gap: 14px;
@@ -854,6 +852,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 

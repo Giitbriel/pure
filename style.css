@@ -212,7 +212,7 @@ h1 img {
 =========================== */
 h1, h2 {
   font-family: 'Playfair Display', serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: rgba(236, 225, 200,1);
   text-align: center;
 }
@@ -375,7 +375,7 @@ section::after {
   /* padding z uwzględnieniem bezpiecznych obszarów */
   padding-top: 20px; /* góra 120px jak lokalizacja */
   max-width: 80%;
-   margin: 20px auto;  /* centrowanie poziome */
+   margin: 15px auto;  /* centrowanie poziome */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,10 +667,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .location-wrapper {
   max-width: 900px;
-  margin: auto;
+  margin: 5px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 .location-text {
@@ -828,7 +828,7 @@ textarea {
   /* padding z uwzględnieniem bezpiecznych obszarów */
 padding-top: 20px;/* góra 120px */
   max-width: 80%;
-   margin: 20px auto;  /* centrowanie poziome */
+   margin: 15px auto;  /* centrowanie poziome */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -856,6 +856,7 @@ padding-top: 20px;/* góra 120px */
     backdrop-filter: none !important;
   }
 }
+
 
 
 
